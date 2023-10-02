@@ -5,13 +5,9 @@
 // example test. To run these tests, uncomment this file along with the
 // example resource in lib/chime-call-analytics-demo-stack.ts
 test('SQS Queue Created', () => {
-//   const app = new cdk.App();
-//     // WHEN
-//   const stack = new ChimeCallAnalyticsDemo.ChimeCallAnalyticsDemoStack(app, 'MyTestStack');
-//     // THEN
-//   const template = Template.fromStack(stack);
-
-//   template.hasResourceProperties('AWS::SQS::Queue', {
-//     VisibilityTimeout: 300
-//   });
+  let a = 0;
+  for (let i = 0; i < 10; i++) {
+    a++;
+  }
+  expect(a).toBe(12);
 });
