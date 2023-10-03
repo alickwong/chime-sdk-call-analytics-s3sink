@@ -5,7 +5,7 @@ import {writeFile} from "node:fs/promises";
 import {S3Helper} from "./helpers/S3Helper";
 import {CallMetaDataType} from "./types/CallMetaDataType";
 
-
+// Pull from SQS
 const app = Consumer.create({
   queueUrl: 'https://sqs.us-east-1.amazonaws.com/331102492406/s3-chime-call-analytics-recording ',
   region: 'us-east-1',
