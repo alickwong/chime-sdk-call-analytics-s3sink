@@ -5,7 +5,7 @@ export type S3SQSEventRecordType = {
   eventTime: string,
   eventName: string, // 'ObjectCreated:Put'
   userIdentity: {
-    principalId: string // AWS:AROAU2FZ7C33NJPFFK35W:YPB-562217ba-5e20-41e2-b183-4f68bf3d5904
+    principalId: string // AWS:XXXXX:YPB-562217ba-5e20-41e2-b183-XXXX
   },
   requestParameters: { sourceIPAddress: string },
   responseElements: {
@@ -14,7 +14,7 @@ export type S3SQSEventRecordType = {
   },
   s3: {
     s3SchemaVersion: string,
-    configurationId: string, // AWS:AROAU2FZ7C33NJPFFK35W:YPB-562217ba-5e20-41e2-b183-4f68bf3d5904
+    configurationId: string, // AWS:XXXX:YPB-562217ba-5e20-41e2-b183-XXXX
     bucket: {
       name: string,
       ownerIdentity: [any],
